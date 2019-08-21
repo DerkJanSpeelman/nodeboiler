@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "build:server": "tsc -p ./server/tsconfig.json",
     "dev": "webpack && cd server && ts-node-dev --respawn --transpileOnly server.ts && cd ..",
-    "prod": "npm run build:server && node ./dist/server/server.js",
+    "prod": "npm run prod:build && npm run prod:deploy",
+    "prod:build": "tsc -p ./server/tsconfig.json",
+    "prod:deploy": "node ./dist/server/server.js",
     "watch": "webpack -w"
   },
   "keywords": [],
