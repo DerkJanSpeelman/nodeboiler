@@ -2,7 +2,7 @@
   "name": "nodeboiler",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/server/server.js",
   "scripts": {
     "build": "webpack",
     "dev": "webpack && cd server && ts-node-dev --respawn --transpileOnly server.ts && cd ..",
@@ -16,8 +16,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "matter-js": "^0.14.2",
-    "pixi.js": "^5.1.1",
     "ts-node-dev": "^1.0.0-pre.41",
     "typescript": "^3.5.3"
   },
