@@ -8,7 +8,7 @@
     "dev": "webpack && cd server && ts-node-dev --respawn --transpileOnly server.ts && cd ..",
     "prod": "npm run prod:build && npm run prod:deploy",
     "prod:build": "tsc -p ./server/tsconfig.json",
-    "prod:deploy": "node ./dist/server/server.js",
+    "prod:deploy": " ",
     "watch": "webpack -w"
   },
   "keywords": [],
@@ -16,7 +16,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "http": "0.0.0",
     "matter-js": "^0.14.2",
     "pixi.js": "^5.1.1",
     "ts-node-dev": "^1.0.0-pre.41",

@@ -1,8 +1,8 @@
 # Node.js Boilerplate
 
-This repo has a Node.js server that can host compiled contents from the `client` directory.
+This repo is a Node.js server in TypeScript.
 
-Compiling features:
+Features:
 - [TypeScipt](https://www.typescriptlang.org/) as JavaScript
 - [SASS](https://sass-lang.com/) as CSS
 - [Pug.js](https://pugjs.org/api/getting-started.html) as HTML
