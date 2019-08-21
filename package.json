@@ -8,7 +8,7 @@
     "dev": "webpack && cd server && ts-node-dev --respawn --transpileOnly server.ts && cd ..",
     "prod": "npm run prod:build && npm run prod:deploy",
     "prod:build": "tsc -p ./server/tsconfig.json",
-    "prod:deploy": " ",
+    "prod:deploy": "node ./dist/server/server.js",
     "watch": "webpack -w"
   },
   "keywords": [],
