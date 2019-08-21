@@ -20,7 +20,7 @@ See `package.json` for the available `npm` script commands.
 
 <br>
 
-Please note that I cloned this repo into `~/Projects/nodeboiler`. So for me the `docker build` command would look like:
+Before building the docker image, you need to build the production app by running `npm run prod:build`. Please note that I cloned this repo into `~/Projects/nodeboiler`. So for me the `docker build` command would look like:
 
 ```sh
 docker build -t nodeboiler ~/Projects/nodeboiler`
