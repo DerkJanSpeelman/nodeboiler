@@ -13,5 +13,7 @@ app.get('/', (_req: any, res: any) => {
     res.sendFile(path.resolve(BASE_PATH + '/client/index.html'));
 });
 
+app.use(express.static(path.resolve(BASE_PATH + '/client')));
+
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
