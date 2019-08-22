@@ -64,7 +64,7 @@ const devRules = [{
     test: /\.(png|svg|jpg|gif)$/,
     loader: 'file-loader',
     options: {
-      outputPath: 'assets',
+        outputPath: 'client/assets',
     },
 }];
 
@@ -115,7 +115,7 @@ const config = {
             }
         }),
         new MiniCssExtractPlugin({
-            filename: (ENV === 'production' ? '[name].min.css' : '[name].css'),
+            filename: '/assets/' + (ENV === 'production' ? '[name].min.css' : '[name].css'),
             chunkFilename: '[id].css'
         })
     ],
