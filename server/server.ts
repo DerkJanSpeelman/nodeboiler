@@ -4,12 +4,12 @@ import path from 'path';
 const app = express();
 
 // host config
-const PORT = 3000;
-const HOST = '0.0.0.0';
+const PORT: number = 3000;
+const HOST: string = '0.0.0.0';
 
 // environment
-const ENV = process.argv.find((arg) => arg.includes('dist')) ? 'production' : 'development';
-const BASE_PATH = (ENV === 'production' ? __dirname + '/../' : __dirname + '/../dist');
+const ENV: string = process.argv.find((arg) => arg.includes('dist')) ? 'production' : 'development';
+const BASE_PATH: string = (ENV === 'production' ? __dirname + '/../' : __dirname + '/../dist');
 
 // routing
 app.get('/', (_req: any, res: any) => {

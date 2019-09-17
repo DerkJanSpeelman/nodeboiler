@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "experss": "0.0.1-security",
     "express": "^4.17.1",
     "ts-node-dev": "^1.0.0-pre.41",
     "typescript": "^3.5.3"
